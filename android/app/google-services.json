@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "570274089022",
+    "firebase_url": "https://pong-score.firebaseio.com",
+    "project_id": "pong-score",
+    "storage_bucket": "pong-score.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:570274089022:android:a65ee9f6d57411e960a96f",
+        "android_client_info": {
+          "package_name": "com.example.pong_score"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "570274089022-nit1lulvl9v5jo0dbl946f10a0ek8u94.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCI7QIwM91v7nazKgLrCJ0Njga2jPhhiFU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "570274089022-nit1lulvl9v5jo0dbl946f10a0ek8u94.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
