@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:pong_score/ui/home_club/home_club_page.dart';
 
 class TabBarGlobalWidget extends StatelessWidget {
   const TabBarGlobalWidget({
@@ -62,14 +63,7 @@ class TabBarViewGlobal extends StatelessWidget {
     return TabBarView(children: [
       Scaffold(
         backgroundColor: Color(0xFF212B45),
-        body: Center(
-          child: Container(
-            child: Text(
-              translate('home-club'),
-              style: Theme.of(context).textTheme.display1,
-            ),
-          ),
-        ),
+        body: HomeClub(translate: translate),
       ),
       Scaffold(
         backgroundColor: Color(0xFF212B45),
@@ -84,13 +78,16 @@ class TabBarViewGlobal extends StatelessWidget {
       ),
       Scaffold(
         backgroundColor: Color(0xFF212B45),
-        body: Container(
-          child: Text(
-            translate('leader-board'),
-            style: Theme.of(context).textTheme.display1,
+        body: Center(
+          child: Container(
+            child: Text(
+              translate('leader-board'),
+              style: Theme.of(context).textTheme.display1,
+            ),
           ),
         ),
       )
     ]);
   }
 }
+
