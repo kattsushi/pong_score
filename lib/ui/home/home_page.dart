@@ -13,7 +13,7 @@ class HomePage extends StatelessWidget {
         bottomNavigationBar: TabBarGlobalWidget(translate: translate),
         drawer: DrawerGlobal(),
         appBar: AppBar(
-          title: Text(translate('home')),
+          title: Text("Pong-Score"),
           actions: <Widget>[
             IconButton(
               icon: Icon(Icons.settings),

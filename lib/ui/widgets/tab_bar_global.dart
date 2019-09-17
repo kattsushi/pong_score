@@ -1,5 +1,5 @@
-
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class TabBarGlobalWidget extends StatelessWidget {
   const TabBarGlobalWidget({
@@ -11,38 +11,43 @@ class TabBarGlobalWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return TabBar(
-      indicatorColor: Color(0xFF3B2F81),
-      tabs: [
-        Tab(
-          child: Column(
-            children: <Widget>[
-              Icon(Icons.blur_on),
-              Text(translate('home-club')),
-            ],
+    return Container(
+      color: Color(0xFF212B45),
+      child: TabBar(
+        indicatorColor: Color(0xFFFFFFFF),
+        tabs: [
+          Tab(
+            child: Column(
+              children: <Widget>[
+                Icon(Icons.blur_on),
+                SizedBox(height: 5,),
+                Text(translate('home-club'), style: TextStyle(fontSize: 11),),
+              ],
+            ),
           ),
-        ),
-        Tab(
-          child: Column(
-            children: <Widget>[
-              Icon(Icons.layers),
-              Text(translate('record-match')),
-            ],
+          Tab(
+            child: Column(
+              children: <Widget>[
+                Icon(FontAwesomeIcons.tableTennis),
+                SizedBox(height: 5,),
+                Text(translate('record-match'), style: TextStyle(fontSize: 11),),
+              ],
+            ),
           ),
-        ),
-        Tab(
-          child: Column(
-            children: <Widget>[
-              Icon(Icons.format_list_numbered),
-              Text(translate('leader-board')),
-            ],
+          Tab(
+            child: Column(
+              children: <Widget>[
+                Icon(Icons.format_list_numbered),
+                SizedBox(height: 5,),
+                Text(translate('leader-board'), style: TextStyle(fontSize: 11),),
+              ],
+            ),
           ),
-        ),
-      ],
+        ],
+      ),
     );
   }
 }
-
 
 class TabBarViewGlobal extends StatelessWidget {
   const TabBarViewGlobal({
@@ -55,24 +60,31 @@ class TabBarViewGlobal extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return TabBarView(children: [
-      Center(
-        child: Container(
-          child: Text(
-            translate('home-club'),
-            style: Theme.of(context).textTheme.display1,
+      Scaffold(
+        backgroundColor: Color(0xFF212B45),
+        body: Center(
+          child: Container(
+            child: Text(
+              translate('home-club'),
+              style: Theme.of(context).textTheme.display1,
+            ),
           ),
         ),
       ),
-      Center(
-        child: Container(
-          child: Text(
-            translate('record-match'),
-            style: Theme.of(context).textTheme.display1,
+      Scaffold(
+        backgroundColor: Color(0xFF212B45),
+        body: Center(
+          child: Container(
+            child: Text(
+              translate('record-match'),
+              style: Theme.of(context).textTheme.display1,
+            ),
           ),
         ),
       ),
-      Center(
-        child: Container(
+      Scaffold(
+        backgroundColor: Color(0xFF212B45),
+        body: Container(
           child: Text(
             translate('leader-board'),
             style: Theme.of(context).textTheme.display1,
