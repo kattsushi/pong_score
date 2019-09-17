@@ -6,9 +6,9 @@ import 'package:pong_score/ui/global/theme/bloc/theme_bloc.dart';
 import 'package:pong_score/ui/global/theme/bloc/theme_state.dart';
 import 'package:pong_score/ui/home/home_page.dart';
 
-void main() => runApp(MyApp());
+void main() => runApp(PongScoreApp());
  
-class MyApp extends StatelessWidget {
+class PongScoreApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return BlocProvider(

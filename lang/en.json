@@ -1,4 +1,13 @@
 {
   "home": "Home",
-  "hello-world": "Hello World"
+  "hello-world": "Hello World",
+  "home-club": "Home Club",
+  "leader-board": "Leader Board",
+  "record-match": "Record Match",
+  "members": "Merbers",
+  "tournaments": "Tournaments",
+  "events": "Events",
+  "club-info": "Club Info",
+  "subcription": "Subcription",
+  "teams-management": "Teams Management"
 }
