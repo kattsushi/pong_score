@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>570274089022-dajm5gb2njpod9e4sh64feold2vs2rfe.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.570274089022-dajm5gb2njpod9e4sh64feold2vs2rfe</string>
+	<key>API_KEY</key>
+	<string>AIzaSyATHzcOjw89gu1IoFvIJobAkODU8ZIaWqY</string>
+	<key>GCM_SENDER_ID</key>
+	<string>570274089022</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.example.pongScore</string>
+	<key>PROJECT_ID</key>
+	<string>pong-score</string>
+	<key>STORAGE_BUCKET</key>
+	<string>pong-score.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:570274089022:ios:1c8476bc9ac0759f60a96f</string>
+	<key>DATABASE_URL</key>
+	<string>https://pong-score.firebaseio.com</string>
+</dict>
+</plist>

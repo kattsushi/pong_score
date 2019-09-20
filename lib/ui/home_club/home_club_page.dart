@@ -10,41 +10,26 @@ class HomeClub extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: Row(children: <Widget>[
-        Column(
-          children: <Widget>[
-            Container(
-              width: MediaQuery.of(context).size.width / 2,
-              height: 160,
-              child: Card(
-                child: Container(
-                  child: Text(
-                    translate('home-club'),
-                    style: Theme.of(context).textTheme.display1,
+    return GridView.count(
+      crossAxisCount: 2,
+      // Generate 100 widgets that display their index in the List.
+      children: List.generate(6, (index) {
+        return Card(
+          color: Color(0xFF3366FE),
+          elevation: 16,
+          child: Center(
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                Text(
+                    'Item $index',
+                    style: Theme.of(context).textTheme.headline,
                   ),
-                ),
-              ),
+              ],
             ),
-          ],
-        ),
-        Column(
-          children: <Widget>[
-            Container(
-              width: MediaQuery.of(context).size.width / 2,
-              child: Card(
-                child: Container(
-                  color: Color(0xFF062346),
-                  child: Text(
-                    translate('home-club'),
-                    style: Theme.of(context).textTheme.display1,
-                  ),
-                ),
-              ),
-            ),
-          ],
-        ),
-      ]),
+          ),
+        );
+      }),
     );
   }
 }
