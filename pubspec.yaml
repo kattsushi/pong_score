@@ -22,6 +22,7 @@ dependencies:
   firebase: ^5.0.0
   firebase_core: ^0.4.0+1
   # Add the dependency for the FlutterFire plugin for Google Analytics
+  device_preview:
   firebase_analytics: ^5.0.2
   firebase_web: ^5.0.9
   firebase_storage: ^3.0.6
@@ -36,8 +37,8 @@ dependencies:
 
   flutter_localizations:
     sdk: flutter
-  flutter_bloc: ^0.21.0
-  equatable: ^0.5.1
+  flutter_bloc: ^0.22.1
+  equatable: ^0.6.0
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.

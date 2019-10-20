@@ -4,13 +4,17 @@ import 'package:pong_score/ui/global/theme/app_themes.dart';
 
 @immutable
 abstract class ThemeEvent extends Equatable {
-  ThemeEvent([List props = const <dynamic>[]]) : super(props);
+  const ThemeEvent([List props = const <dynamic>[]]);
 }
 
 class ThemeChanged extends ThemeEvent {
   final AppTheme theme;
 
-  ThemeChanged({
-    @required this.theme
-  }): super([theme]);
+  const ThemeChanged({ @required this.theme });
+
+  @override
+  List<Object> get props => [theme];
+
+  @override
+  String toString() => 'UpdateTab { tab: $theme }';
 }

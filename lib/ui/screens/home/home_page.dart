@@ -1,16 +1,16 @@
 import 'package:flutter/material.dart';
-import 'package:pong_score/ui/global/app_localizations.dart';
+import 'package:pong_score/ui/screens/preference/preference_page.dart';
 import 'package:pong_score/ui/widgets/drawer_global.dart';
-import 'package:pong_score/ui/widgets/tab_bar_global.dart';
-import '../preference/preference_page.dart';
+// import 'package:pong_score/ui/global/app_localizations.dart';
+// import 'package:pong_score/ui/widgets/tab_bar_global.dart';
 
 class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-  final translate = Applocalizations.of(context).translate;
+  // final translate = Applocalizations.of(context).translate;
     return DefaultTabController(
       child: Scaffold(
-        bottomNavigationBar: TabBarGlobalWidget(translate: translate),
+        // bottomNavigationBar: TabBarGlobalWidget(translate: translate),
         drawer: DrawerGlobal(),
         appBar: AppBar(
           title: Text("Pong-Score"),
@@ -26,7 +26,7 @@ class HomePage extends StatelessWidget {
             )
           ],
         ),
-        body: TabBarViewGlobal(translate: translate),
+        body: Container(),
       ),
       length: 3,
     );

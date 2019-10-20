@@ -1,27 +1,28 @@
+import 'package:device_preview/device_preview.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:pong_score/ui/global/app_localizations.dart';
 import 'package:pong_score/ui/global/theme/bloc/theme_bloc.dart';
 import 'package:pong_score/ui/global/theme/bloc/theme_state.dart';
-import 'package:pong_score/ui/home/home_page.dart';
+import 'package:pong_score/ui/screens/home/home_page.dart';
 
-void main() => runApp(PongScoreApp());
+void main() => runApp(DevicePreview(builder: (context) => PongScoreApp()));
  
 class PongScoreApp extends StatelessWidget {
   @override
-  Widget build(BuildContext context) {
-    return BlocProvider(
+  Widget build(BuildContext context) => BlocProvider(
       builder: (context) => ThemeBloc(),
       child: BlocBuilder<ThemeBloc, ThemeState>(
         builder: _buildWithTheme,
       ),
     );
-  }
 
   Widget _buildWithTheme(BuildContext context, ThemeState state) {
     return MaterialApp(
-      title: 'Material App',
+      debugShowCheckedModeBanner: false,
+      builder: DevicePreview.appBuilder,
+      locale: DevicePreview.of(context).locale,
       home: HomePage(),
       theme: state.themeData,
       supportedLocales: [
