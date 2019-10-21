@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:pong_score/ui/screens/home_club/home_club_page.dart';
+import 'package:pong_score/ui/views/home_club/home_club_page.dart';
 
 class TabBarGlobalWidget extends StatelessWidget {
   const TabBarGlobalWidget({

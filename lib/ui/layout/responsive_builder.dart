@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:pong_score/ui/global/layout/sizing_information.dart';
+import 'package:pong_score/ui/layout/sizing_information.dart';
 import 'package:pong_score/utils/ui_utils.dart';
 
 class ResponsiveBuilder extends StatelessWidget {

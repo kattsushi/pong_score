@@ -2,13 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:pong_score/constants/device_screen_type.dart';
 import 'package:pong_score/ui/layout/responsive_builder.dart';
 
-class ScreenTypeBuilder extends StatelessWidget {
+class ScreenTypeLayout extends StatelessWidget {
   // Mobile will be returned by default
   final Widget mobile;
   final Widget tablet;
   final Widget desktop;
 
-  const ScreenTypeBuilder({
+  const ScreenTypeLayout({
     Key key,
     @required this.mobile,
     this.tablet,

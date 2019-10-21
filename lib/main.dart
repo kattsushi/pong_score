@@ -5,7 +5,7 @@ import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:pong_score/ui/global/app_localizations.dart';
 import 'package:pong_score/ui/global/theme/bloc/theme_bloc.dart';
 import 'package:pong_score/ui/global/theme/bloc/theme_state.dart';
-import 'package:pong_score/ui/screens/home/home_page.dart';
+import 'package:pong_score/ui/views/home/home_view.dart';
 
 void main() => runApp(DevicePreview(builder: (context) => PongScoreApp()));
  
