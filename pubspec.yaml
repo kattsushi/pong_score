@@ -26,7 +26,7 @@ dependencies:
   firebase_analytics: ^5.0.2
   firebase_web: ^5.0.9
   firebase_storage: ^3.0.6
-  cloud_firestore: ^0.12.9+4
+  cloud_firestore: ^0.13.0+1
   sealed_unions: ^3.0.2+2
   font_awesome_flutter: ^8.5.0
   flutter_cupertino_localizations: ^1.0.1

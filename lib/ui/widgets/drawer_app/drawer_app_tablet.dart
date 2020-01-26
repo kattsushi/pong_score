@@ -8,7 +8,7 @@ class DrawerAppTabletPortrait extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    var orientation = MediaQuery.of(context).orientation == Orientation.portrait ? true : false;
+    // var orientation = MediaQuery.of(context).orientation == Orientation.portrait ? true : false;
     final translate = Applocalizations.of(context).translate;
     return Container(
       height: 130,
@@ -34,7 +34,7 @@ class DrawerAppTabletLandscape extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    var orientation = MediaQuery.of(context).orientation != Orientation.landscape;
+    // var orientation = MediaQuery.of(context).orientation != Orientation.landscape;
     final translate = Applocalizations.of(context).translate;
     return Container(
       width: 250,
