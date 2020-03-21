@@ -9,7 +9,7 @@ enum AppTheme {
 
 final appThemeData = {
   AppTheme.BlueLight : ThemeData(
-    brightness: Brightness.dark,
+    brightness: Brightness.light,
     primaryColor: Color(0xFF3B2F81),
     fontFamily: 'Orbitron'
   ),

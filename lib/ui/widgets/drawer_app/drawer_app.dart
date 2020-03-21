@@ -17,8 +17,8 @@ class DrawerApp extends StatelessWidget {
     return ScreenTypeLayout(
       mobile: DrawerAppMobile(),
       tablet: OrientationLayout(
-        portrait: DrawerAppTabletPortrait(),
-        landscape: DrawerAppTabletLandscape(),
+        portrait: (context) => DrawerAppTabletPortrait(),
+        landscape: (context) => DrawerAppTabletLandscape(),
       ),
     );
   }
