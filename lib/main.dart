@@ -23,8 +23,9 @@ class PongScoreApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       builder: DevicePreview.appBuilder,
       locale: DevicePreview.of(context).locale,
-      home: HomePage(),
+      home: HomeView(),
       theme: state.themeData,
+      // TODO: overwrite language state
       supportedLocales: [
         Locale('es', 'MX'),
         Locale('en', 'US'),

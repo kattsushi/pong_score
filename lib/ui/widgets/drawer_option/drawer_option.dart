@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:pong_score/ui/layout/orientation_layout.dart';
 import 'package:pong_score/ui/layout/screen_type_layout.dart';
+import 'package:pong_score/ui/widgets/drawer_app/drawer_item_data.dart';
 import 'package:pong_score/ui/widgets/drawer_option/drawer_option_mobile.dart';
 import 'package:pong_score/ui/widgets/drawer_option/drawer_option_tablet.dart';
+import 'package:provider/provider.dart';
 
 class DrawerOption extends StatelessWidget {
   final String title;
@@ -15,24 +17,16 @@ class DrawerOption extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ScreenTypeLayout(
-      mobile: OrientationLayout(
-        landscape: DrawerOptionMobileLandscape(
-          iconData: iconData,
+    return Provider.value(
+      value: DrawerItemData(iconData: iconData, title: title),
+      child: ScreenTypeLayout(
+        mobile: OrientationLayout(
+          landscape: (context) => DrawerOptionMobileLandscape(),
+          portrait: (context) => DrawerOptionMobilePortrait(),
         ),
-        portrait: DrawerOptionMobilePortrait(
-          title: title,
-          iconData: iconData,
-        ),
-      ),
-      tablet: OrientationLayout(
-        portrait: DrawerOptionTabletPortrait(
-          iconData: iconData,
-          title: title,
-        ),
-        landscape: DrawerOptionMobilePortrait(
-          iconData: iconData,
-          title: title,
+        tablet: OrientationLayout(
+          portrait: (context) => DrawerOptionTabletPortrait(),
+          landscape:(context) => DrawerOptionMobilePortrait(),
         ),
       ),
     );

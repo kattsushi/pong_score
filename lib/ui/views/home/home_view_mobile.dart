@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:pong_score/ui/views/home/home_view_model.dart';
 import 'package:pong_score/ui/views/preference/preference_page.dart';
+import 'package:pong_score/ui/widgets/base_widget.dart/base_widget_model.dart';
 import 'package:pong_score/ui/widgets/drawer_app/drawer_app.dart';
 
-class HomeMobileViewPortrait extends StatelessWidget {
-  const HomeMobileViewPortrait({Key key}) : super(key: key);
+class HomeMobileViewPortrait extends BaseModelWidget<HomeViewModel> {
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, HomeViewModel model) {
     final GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey<ScaffoldState>();
     return Container(
       child: Scaffold(
@@ -35,11 +36,9 @@ class HomeMobileViewPortrait extends StatelessWidget {
   }
 }
 
-class HomeMobileLandscape extends StatelessWidget {
-  const HomeMobileLandscape({Key key}) : super(key: key);
-
+class HomeMobileViewLandscape extends BaseModelWidget<HomeViewModel> {
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, HomeViewModel model) {
     return Scaffold(
       body: Row(children: <Widget>[
         DrawerApp(),
