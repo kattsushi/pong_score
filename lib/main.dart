@@ -3,22 +3,26 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
-import 'package:pong_score/ui/global/app_localizations.dart';
-import 'package:pong_score/ui/global/theme/bloc/theme_bloc.dart';
-import 'package:pong_score/ui/global/theme/bloc/theme_state.dart';
-import 'package:pong_score/ui/views/home/home_view.dart';
+import 'package:pong_score/domain/core/utils/app_localizations.dart';
+import 'package:pong_score/injection.dart';
+import 'package:pong_score/presentation/pages/home/home_view.dart';
 
-void main() => runApp(
-  DevicePreview(
-    enabled: kDebugMode,
-    builder: (context) => PongScoreApp()
-  )
-);
+import 'domain/core/theme/bloc/bloc.dart';
+
+void main() {
+  configureInjection(Env.prod);
+  runApp(
+    DevicePreview(
+      enabled: kDebugMode,
+      builder: (context) => PongScoreApp()
+    )
+  );
+}
  
 class PongScoreApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) => BlocProvider(
-      builder: (context) => ThemeBloc(),
+      create: (context) => ThemeBloc(),
       child: BlocBuilder<ThemeBloc, ThemeState>(
         builder: _buildWithTheme,
       ),
