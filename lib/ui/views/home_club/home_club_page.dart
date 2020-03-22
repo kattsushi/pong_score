@@ -23,7 +23,7 @@ class HomeClub extends StatelessWidget {
               children: [
                 Text(
                     'Item $index',
-                    style: Theme.of(context).textTheme.headline,
+                    style: Theme.of(context).textTheme.headline2,
                   ),
               ],
             ),

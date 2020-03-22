@@ -32,7 +32,7 @@ class PreferencePage extends StatelessWidget {
                   title: Text(
                     itemAppTheme.toString(),
                     // To show light text with the dark variants...
-                    style: appThemeData[itemAppTheme].textTheme.body1,
+                    style: appThemeData[itemAppTheme].textTheme.bodyText2,
                   ),
                   onTap: () {
                     // This will make the Bloc output a new ThemeState,

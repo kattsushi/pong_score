@@ -71,7 +71,7 @@ class TabBarViewGlobal extends StatelessWidget {
           child: Container(
             child: Text(
               translate('record-match'),
-              style: Theme.of(context).textTheme.display1,
+              style: Theme.of(context).textTheme.subtitle2,
             ),
           ),
         ),
@@ -82,7 +82,7 @@ class TabBarViewGlobal extends StatelessWidget {
           child: Container(
             child: Text(
               translate('leader-board'),
-              style: Theme.of(context).textTheme.display1,
+              style: Theme.of(context).textTheme.subtitle1,
             ),
           ),
         ),
