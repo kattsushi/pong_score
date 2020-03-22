@@ -1,4 +1,5 @@
 import 'package:device_preview/device_preview.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
@@ -7,7 +8,12 @@ import 'package:pong_score/ui/global/theme/bloc/theme_bloc.dart';
 import 'package:pong_score/ui/global/theme/bloc/theme_state.dart';
 import 'package:pong_score/ui/views/home/home_view.dart';
 
-void main() => runApp(DevicePreview(builder: (context) => PongScoreApp()));
+void main() => runApp(
+  DevicePreview(
+    enabled: kDebugMode,
+    builder: (context) => PongScoreApp()
+  )
+);
  
 class PongScoreApp extends StatelessWidget {
   @override
@@ -20,7 +26,7 @@ class PongScoreApp extends StatelessWidget {
 
   Widget _buildWithTheme(BuildContext context, ThemeState state) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
+      debugShowCheckedModeBanner: true,
       builder: DevicePreview.appBuilder,
       locale: DevicePreview.of(context).locale,
       home: HomeView(),
