@@ -90,8 +90,8 @@ flutter:
   uses-material-design: true
   # To add assets to your application, add an assets section, like this:
   assets:
-    - lang/en.json
-    - lang/es.json
+    - lib/domain/core/lang/en.json
+    - lib/domain/core/lang/es.json
     - images/header.png
     - images/vector.png
     - images/vectors/vector.svg
