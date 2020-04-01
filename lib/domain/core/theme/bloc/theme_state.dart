@@ -5,7 +5,7 @@ import 'package:meta/meta.dart';
 @immutable
 class ThemeState extends Equatable {
   final ThemeData themeData;
-  const ThemeState({ @required this.themeData });
+  const ThemeState({@required this.themeData});
 
   @override
   List<Object> get props => [themeData];

@@ -22,9 +22,9 @@ class HomeClub extends StatelessWidget {
               mainAxisSize: MainAxisSize.min,
               children: [
                 Text(
-                    'Item $index',
-                    style: Theme.of(context).textTheme.headline2,
-                  ),
+                  'Item $index',
+                  style: Theme.of(context).textTheme.headline2,
+                ),
               ],
             ),
           ),

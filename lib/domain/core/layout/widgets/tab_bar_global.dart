@@ -21,8 +21,13 @@ class TabBarGlobalWidget extends StatelessWidget {
             child: Column(
               children: <Widget>[
                 Icon(Icons.blur_on),
-                SizedBox(height: 5,),
-                Text(translate('home-club'), style: TextStyle(fontSize: 11),),
+                SizedBox(
+                  height: 5,
+                ),
+                Text(
+                  translate('home-club'),
+                  style: TextStyle(fontSize: 11),
+                ),
               ],
             ),
           ),
@@ -30,8 +35,13 @@ class TabBarGlobalWidget extends StatelessWidget {
             child: Column(
               children: <Widget>[
                 Icon(FontAwesomeIcons.tableTennis),
-                SizedBox(height: 5,),
-                Text(translate('record-match'), style: TextStyle(fontSize: 11),),
+                SizedBox(
+                  height: 5,
+                ),
+                Text(
+                  translate('record-match'),
+                  style: TextStyle(fontSize: 11),
+                ),
               ],
             ),
           ),
@@ -39,8 +49,13 @@ class TabBarGlobalWidget extends StatelessWidget {
             child: Column(
               children: <Widget>[
                 Icon(Icons.format_list_numbered),
-                SizedBox(height: 5,),
-                Text(translate('leader-board'), style: TextStyle(fontSize: 11),),
+                SizedBox(
+                  height: 5,
+                ),
+                Text(
+                  translate('leader-board'),
+                  style: TextStyle(fontSize: 11),
+                ),
               ],
             ),
           ),
@@ -90,4 +105,3 @@ class TabBarViewGlobal extends StatelessWidget {
     ]);
   }
 }
-

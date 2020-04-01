@@ -12,21 +12,17 @@ import 'domain/core/theme/bloc/bloc.dart';
 void main() {
   configureInjection(Env.prod);
   runApp(
-    DevicePreview(
-      enabled: kDebugMode,
-      builder: (context) => PongScoreApp()
-    )
-  );
+      DevicePreview(enabled: kDebugMode, builder: (context) => PongScoreApp()));
 }
- 
+
 class PongScoreApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) => BlocProvider(
-      create: (context) => ThemeBloc(),
-      child: BlocBuilder<ThemeBloc, ThemeState>(
-        builder: _buildWithTheme,
-      ),
-    );
+        create: (context) => ThemeBloc(),
+        child: BlocBuilder<ThemeBloc, ThemeState>(
+          builder: _buildWithTheme,
+        ),
+      );
 
   Widget _buildWithTheme(BuildContext context, ThemeState state) {
     return MaterialApp(
@@ -54,7 +50,7 @@ class PongScoreApp extends StatelessWidget {
         for (var supportedLocale in supportedLocales) {
           if (supportedLocale.languageCode == locale.languageCode &&
               supportedLocale.countryCode == locale.countryCode) {
-                return supportedLocale;
+            return supportedLocale;
           }
         }
         return supportedLocales.first;

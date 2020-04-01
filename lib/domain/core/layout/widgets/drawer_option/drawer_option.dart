@@ -26,7 +26,7 @@ class DrawerOption extends StatelessWidget {
         ),
         tablet: OrientationLayout(
           portrait: (context) => DrawerOptionTabletPortrait(),
-          landscape:(context) => DrawerOptionMobilePortrait(),
+          landscape: (context) => DrawerOptionMobilePortrait(),
         ),
       ),
     );

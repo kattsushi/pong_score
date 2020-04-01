@@ -38,14 +38,14 @@ class DrawerApp extends StatelessWidget {
   static List<Widget> buildListViewOptions(String translate(String key)) {
     return menuData.map<Widget>((menu) {
       if (menu is MenuDivider) {
-          return Divider();
-        } else if (menu is MenuItemDrawer) {
-          return DrawerOption(
-            title: menu.transKey,
-            iconData: menu.icon,
-          );
-        }
-        return Container();
+        return Divider();
+      } else if (menu is MenuItemDrawer) {
+        return DrawerOption(
+          title: menu.transKey,
+          iconData: menu.icon,
+        );
+      }
+      return Container();
     }).toList();
     //   [
     //   DrawerOption(
