@@ -12,5 +12,13 @@
   "events": "Eventos",
   "club-info": "Club Info",
   "subcription": "Subcripcion",
-  "teams-management": "Gestion de Equipos"
+  "teams-management": "Gestion de Equipos",
+  "login-with": "Iniciar Sesion con",
+  "login": "Iniciar Sesion",
+  "login-facebook": "Facebook",
+  "login-google": "Google",
+  "rememberme": "Recuerdame",
+  "email": "Email",
+  "password": "Contrasena",
+  "or": "o"
 }

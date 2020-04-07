@@ -12,5 +12,13 @@
   "events": "Events",
   "club-info": "Club Info",
   "subcription": "Subcription",
-  "teams-management": "Teams Management"
+  "teams-management": "Teams Management",
+  "login-with": "Login with",
+  "login": "Login",
+  "login-facebook": "Facebook",
+  "login-google": "Google",
+  "rememberme": "Remember me",
+  "email": "Email",
+  "password": "Password",
+  "or": "or"
 }

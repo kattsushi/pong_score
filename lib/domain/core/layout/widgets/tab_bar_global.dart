@@ -78,7 +78,7 @@ class TabBarViewGlobal extends StatelessWidget {
     return TabBarView(children: [
       Scaffold(
         backgroundColor: Color(0xFF212B45),
-        body: HomeClub(translate: translate),
+        body: HomeClub(),
       ),
       Scaffold(
         backgroundColor: Color(0xFF212B45),

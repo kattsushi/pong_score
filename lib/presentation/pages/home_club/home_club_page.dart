@@ -3,10 +3,10 @@ import 'package:flutter/material.dart';
 class HomeClub extends StatelessWidget {
   const HomeClub({
     Key key,
-    @required this.translate,
+    // @required this.translate,
   }) : super(key: key);
 
-  final String Function(String key) translate;
+  // final String Function(String key) translate;
 
   @override
   Widget build(BuildContext context) {

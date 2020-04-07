@@ -17,6 +17,10 @@ class HomeMobileViewPortrait extends BaseModelWidget<HomeViewModel> {
         body: Container(
           child: Stack(
             children: <Widget>[
+              MaterialButton(
+                onPressed: () {},
+                child: Text('test'),
+              ),
               Center(child: Text('hola mundo $title')),
               Container(
                 child: Image.asset(

@@ -39,6 +39,7 @@ dependencies:
     sdk: flutter
   flutter_bloc: ^3.2.0
   equatable: ^1.1.1
+  polygon_clipper: ^1.0.2
 
   # DDD packages related
 
@@ -93,6 +94,8 @@ flutter:
     - lib/domain/core/lang/en.json
     - lib/domain/core/lang/es.json
     - images/header.png
+    - images/login_logo_light.png
+    - images/header-slide.png
     - images/vector.png
     - images/vectors/vector.svg
   #  - images/a_dot_ham.jpeg
