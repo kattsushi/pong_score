@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:pong_score/domain/core/layout/base_widget.dart/base_widget_model.dart';
-import 'package:pong_score/domain/core/layout/widgets/drawer_app/drawer_app.dart';
+import 'package:pong_score/presentation/core/base_widget.dart/base_widget_model.dart';
 import 'package:pong_score/presentation/pages/home/home_view_mobile.dart';
 import 'package:pong_score/presentation/pages/home/home_view_model.dart';
+import 'package:pong_score/presentation/widgets/drawer_app/drawer_app.dart';
 
 class HomeViewTablet extends BaseModelWidget<HomeViewModel> {
   @override

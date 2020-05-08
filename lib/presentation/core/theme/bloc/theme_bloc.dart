@@ -1,6 +1,6 @@
 import 'dart:async';
 import 'package:bloc/bloc.dart';
-import 'package:pong_score/domain/core/theme/app_themes.dart';
+import 'package:pong_score/presentation/core/theme/app_themes.dart';
 import './bloc.dart';
 
 class ThemeBloc extends Bloc<ThemeEvent, ThemeState> {

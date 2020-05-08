@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:pong_score/domain/core/layout/base_widget.dart/base_widget.dart';
-import 'package:pong_score/domain/core/layout/orientation_layout.dart';
-import 'package:pong_score/domain/core/layout/screen_type_layout.dart';
+import 'package:pong_score/presentation/core/base_widget.dart/base_widget.dart';
 import 'package:pong_score/presentation/pages/home/home_view_mobile.dart';
 import 'package:pong_score/presentation/pages/home/home_view_model.dart';
 import 'package:pong_score/presentation/pages/home/home_view_tablet.dart';
+import 'package:responsive_builder/responsive_builder.dart';
 
 class HomeView extends StatelessWidget {
   @override
@@ -14,7 +13,7 @@ class HomeView extends StatelessWidget {
       viewModel: HomeViewModel(),
       onModelReady: (model) => model.initialise(),
       child: ScreenTypeLayout(
-        mobile: OrientationLayout(
+        mobile: OrientationLayoutBuilder(
           portrait: (context) => HomeMobileViewPortrait(),
           landscape: (context) => HomeMobileViewLandscape(),
         ),

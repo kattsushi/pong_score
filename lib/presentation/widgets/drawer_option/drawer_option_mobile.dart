@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:pong_score/domain/core/layout/base_widget.dart/base_widget_model.dart';
-import 'package:pong_score/domain/core/layout/widgets/drawer_app/drawer_item_data.dart';
+import 'package:pong_score/presentation/core/base_widget.dart/base_widget_model.dart';
+import 'package:pong_score/presentation/widgets/drawer_app/drawer_item_data.dart';
 
 class DrawerOptionMobilePortrait extends BaseModelWidget<DrawerItemData> {
   @override

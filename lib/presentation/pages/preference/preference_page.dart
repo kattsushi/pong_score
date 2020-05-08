@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:pong_score/domain/core/theme/app_themes.dart';
-import 'package:pong_score/domain/core/theme/bloc/bloc.dart';
 import 'package:pong_score/domain/core/utils/app_localizations.dart';
+import 'package:pong_score/presentation/core/theme/app_themes.dart';
+import 'package:pong_score/presentation/core/theme/bloc/bloc.dart';
 
 class PreferencePage extends StatelessWidget {
   const PreferencePage({Key key}) : super(key: key);

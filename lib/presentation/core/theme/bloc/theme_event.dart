@@ -1,6 +1,6 @@
 import 'package:equatable/equatable.dart';
 import 'package:meta/meta.dart';
-import 'package:pong_score/domain/core/theme/app_themes.dart';
+import 'package:pong_score/presentation/core/theme/app_themes.dart';
 
 @immutable
 abstract class ThemeEvent extends Equatable {

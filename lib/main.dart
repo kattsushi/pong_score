@@ -5,10 +5,10 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:pong_score/domain/core/utils/app_localizations.dart';
 import 'package:pong_score/injection.dart';
+import 'package:pong_score/presentation/core/theme/bloc/bloc.dart';
 import 'package:pong_score/presentation/pages/auth/auth_view.dart';
 import 'package:pong_score/presentation/pages/home/home_view.dart';
 import 'package:pong_score/presentation/pages/home_club/home_club_page.dart';
-import 'domain/core/theme/bloc/bloc.dart';
 
 void main() {
   configureInjection(Env.prod);

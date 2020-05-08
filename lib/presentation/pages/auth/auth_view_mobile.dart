@@ -1,8 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:pong_score/domain/core/layout/base_widget.dart/base_widget_model.dart';
 import 'package:pong_score/domain/core/utils/app_localizations.dart';
+import 'package:pong_score/presentation/core/base_widget.dart/base_widget_model.dart';
 import 'package:pong_score/presentation/pages/auth/auth_view_model.dart';
 import 'package:pong_score/presentation/widgets/header.dart';
 import 'package:pong_score/presentation/widgets/input_text.dart';

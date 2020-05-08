@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:pong_score/domain/core/layout/widgets/drawer_app/drawer_app.dart';
 import 'package:pong_score/domain/core/utils/app_localizations.dart';
+import 'package:pong_score/presentation/widgets/drawer_app/drawer_app.dart';
 
 class DrawerAppMobile extends StatelessWidget {
   const DrawerAppMobile({Key key}) : super(key: key);

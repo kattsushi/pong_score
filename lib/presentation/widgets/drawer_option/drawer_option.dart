@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:pong_score/domain/core/layout/orientation_layout.dart';
-import 'package:pong_score/domain/core/layout/screen_type_layout.dart';
-import 'package:pong_score/domain/core/layout/widgets/drawer_app/drawer_item_data.dart';
-import 'package:pong_score/domain/core/layout/widgets/drawer_option/drawer_option_mobile.dart';
-import 'package:pong_score/domain/core/layout/widgets/drawer_option/drawer_option_tablet.dart';
+import 'package:pong_score/presentation/widgets/drawer_app/drawer_item_data.dart';
+import 'package:pong_score/presentation/widgets/drawer_option/drawer_option_mobile.dart';
+import 'package:pong_score/presentation/widgets/drawer_option/drawer_option_tablet.dart';
 import 'package:provider/provider.dart';
+import 'package:responsive_builder/responsive_builder.dart';
 
 class DrawerOption extends StatelessWidget {
   final String title;
@@ -20,11 +19,11 @@ class DrawerOption extends StatelessWidget {
     return Provider.value(
       value: DrawerItemData(iconData: iconData, title: title),
       child: ScreenTypeLayout(
-        mobile: OrientationLayout(
+        mobile: OrientationLayoutBuilder(
           landscape: (context) => DrawerOptionMobileLandscape(),
           portrait: (context) => DrawerOptionMobilePortrait(),
         ),
-        tablet: OrientationLayout(
+        tablet: OrientationLayoutBuilder(
           portrait: (context) => DrawerOptionTabletPortrait(),
           landscape: (context) => DrawerOptionMobilePortrait(),
         ),

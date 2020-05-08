@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:pong_score/domain/core/layout/base_widget.dart/base_widget.dart';
-import 'package:pong_score/domain/core/layout/orientation_layout.dart';
-import 'package:pong_score/domain/core/layout/screen_type_layout.dart';
+import 'package:responsive_builder/responsive_builder.dart';
+import 'package:pong_score/presentation/core/base_widget.dart/base_widget.dart';
 import 'package:pong_score/presentation/pages/auth/auth_view_mobile.dart';
 import 'package:pong_score/presentation/pages/auth/auth_view_model.dart';
 import 'package:pong_score/presentation/pages/auth/auth_view_tablet.dart';
@@ -13,7 +12,7 @@ class AuthView extends StatelessWidget {
       viewModel: AuthViewModel(),
       onModelReady: (model) => model.initialise(),
       child: ScreenTypeLayout(
-        mobile: OrientationLayout(
+        mobile: OrientationLayoutBuilder(
           portrait: (context) => AuthMobileViewPortrait(),
           landscape: (context) => AuthMobileViewLandscape(),
         ),

@@ -12,12 +12,12 @@ final List menuData = [
   MenuItemDrawer(icon: FontAwesomeIcons.usersCog, transKey: 'teams-management'),
 ];
 
-class User {
+class UserData {
   final String name;
   final String email;
   final String urlImage;
 
-  User({this.name, this.email, this.urlImage});
+  UserData({this.name, this.email, this.urlImage});
 }
 
 abstract class MenuItem {}

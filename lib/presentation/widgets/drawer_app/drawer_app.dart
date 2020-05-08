@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:pong_score/domain/core/layout/orientation_layout.dart';
-import 'package:pong_score/domain/core/layout/screen_type_layout.dart';
-import 'package:pong_score/domain/core/layout/widgets/drawer_app/drawer_app_mobile.dart';
-import 'package:pong_score/domain/core/layout/widgets/drawer_app/drawer_app_tablet.dart';
-import 'package:pong_score/domain/core/layout/widgets/drawer_app/drawer_state.dart';
-import 'package:pong_score/domain/core/layout/widgets/drawer_option/drawer_option.dart';
+import 'package:pong_score/presentation/widgets/drawer_app/drawer_app_mobile.dart';
+import 'package:pong_score/presentation/widgets/drawer_app/drawer_app_tablet.dart';
+import 'package:pong_score/presentation/widgets/drawer_app/drawer_state.dart';
+import 'package:pong_score/presentation/widgets/drawer_option/drawer_option.dart';
+import 'package:responsive_builder/responsive_builder.dart';
 // import 'package:pong_score/ui/widgets/drawer_app/drawer_state.dart';
 
 class DrawerApp extends StatelessWidget {
@@ -16,7 +15,7 @@ class DrawerApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return ScreenTypeLayout(
       mobile: DrawerAppMobile(),
-      tablet: OrientationLayout(
+      tablet: OrientationLayoutBuilder(
         portrait: (context) => DrawerAppTabletPortrait(),
         landscape: (context) => DrawerAppTabletLandscape(),
       ),
